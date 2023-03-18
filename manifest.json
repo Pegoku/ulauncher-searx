@@ -1,7 +1,7 @@
 {
   "required_api_version": "^2.0.0",
-  "name": "Brave extension",
-  "description": "To use brave search engine",
+  "name": "searx extension",
+  "description": "To use searx search engine",
   "developer_name": "Pegoku",
   "icon": "images/icon.png",
   "options": {
@@ -11,19 +11,19 @@
     {
       "id": "keyword",
       "type": "keyword",
-      "name": "brave",
-      "description": "brave extension",
+      "name": "Searx",
+      "description": "Searx extension",
       "default_value": "br"
     },
     {
-      "id": "brave_search_language",
+      "id": "searx_search_language",
       "type": "input",
       "name": "Search Language",
       "description": "Input your desired ISO language code",
       "default_value": "en-US"
     },
     {
-      "id": "brave_include_instant_answer",
+      "id": "searx_include_instant_answer",
       "type": "select",
       "name": "Include Instant Answer",
       "description": "Choose whether to include instant answer before search suggestions",

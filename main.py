@@ -10,9 +10,9 @@ from src.functions import generate_suggestions, generate_instant_answer
 from src.items import no_input_item, show_suggestion_items, show_instant_answer
 
 
-class braveExtension(Extension):
+class searxExtension(Extension):
     def __init__(self):
-        super(braveExtension, self).__init__()
+        super(searxExtension, self).__init__()
 
         self.subscribe(KeywordQueryEvent, KeywordQueryEventListener())
 
@@ -20,8 +20,8 @@ class braveExtension(Extension):
 class KeywordQueryEventListener(EventListener):
     def on_event(self, event, extension):
         query = event.get_argument() or str()
-        lang = extension.preferences["brave_search_language"]
-        include_instant_answer = extension.preferences["brave_include_instant_answer"] == "true"
+        lang = extension.preferences["searx_search_language"]
+        include_instant_answer = extension.preferences["searx_include_instant_answer"] == "true"
 
         if len(query.strip()) == 0:
             return RenderResultListAction(no_input_item())
@@ -38,4 +38,4 @@ class KeywordQueryEventListener(EventListener):
 
 
 if __name__ == "__main__":
-    braveExtension().run()
+    searxExtension().run()

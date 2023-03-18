@@ -13,7 +13,7 @@ url = "https://docs.python.org/3.4/howto/urllib2.html"
 def generate_url(search):
     """
     >>> generate_url("hallo")
-    'https://search.brave.com/search?q=hallo'
+    'https://search.searx.com/search?q=hallo'
     """
     return SEARCH_URL + urlencode({"q": search})
 
