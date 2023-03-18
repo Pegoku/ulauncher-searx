@@ -3,9 +3,9 @@ from urllib.request import urlopen, Request
 from urllib.parse import urlencode
 
 
-SEARCH_URL = "https://search.brave.com/search?"
+SEARCH_URL = "https://searx.work/search?"
 SUGGESTION_URL = "https://duckduckgo.com/ac/?"    
-API_URL = "https://searx.work/?"
+API_URL = "https://api.duckduckgo.com/?"
 
 url = "https://docs.python.org/3.4/howto/urllib2.html"
 
