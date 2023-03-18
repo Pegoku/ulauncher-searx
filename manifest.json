@@ -13,7 +13,7 @@
       "type": "keyword",
       "name": "Searx",
       "description": "Searx extension",
-      "default_value": "br"
+      "default_value": "sx"
     },
     {
       "id": "searx_search_language",
